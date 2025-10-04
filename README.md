@@ -1,96 +1,110 @@
-🧠 AI-Powered Live Search Chatbot
-Using LangChain, Gemini, and Google Search API
+# 🤖 AI-Powered Live Search Chatbot  
+### Built with LangChain • Gemini • Google Search API
 
-An intelligent chatbot that performs real-time searches using Google Programmable Search Engine, Gemini LLM, and LangChain.
-It combines RAG (Retrieval-Augmented Generation) with vector-based document retrieval (Chroma DB) to give live, accurate, and context-aware answers.
+![Python](https://img.shields.io/badge/Python-3.10%2B-blue?logo=python)
+![LangChain](https://img.shields.io/badge/LangChain-Framework-green)
+![Gemini](https://img.shields.io/badge/Gemini-LLM-orange)
+![ChromaDB](https://img.shields.io/badge/ChromaDB-Vector%20Store-blueviolet)
+![Streamlit](https://img.shields.io/badge/Streamlit-Web%20App-ff4b4b)
+![License](https://img.shields.io/badge/License-MIT-lightgrey)
 
-🚀 Features
+---
 
-🔍 Live Google Search Integration via Custom Search API
+## 🌟 Overview
 
-🧩 LangChain-powered pipeline for prompt handling & context management
+The **Live Search Chatbot** is an AI-powered system that performs **real-time information retrieval** using  
+**LangChain**, **Google Gemini**, and the **Google Custom Search JSON API**.  
 
-💾 Chroma Vector Database for document embedding and retrieval
+It merges **RAG (Retrieval-Augmented Generation)** with **live Google search** and **vector database lookups** (Chroma DB)  
+to deliver **accurate, context-aware, and up-to-date responses** through a **Streamlit-based chatbot interface**.
 
-💬 Gemini Model for intelligent, conversational responses
+---
 
-🖥️ Streamlit Web UI for interactive chatbot interface
+## ✨ Features
 
-🛠️ Tech Stack
-Component	Description
-Python 3.10+	Core programming language
-LangChain	LLM workflow orchestration
-Google Gemini API	AI reasoning & text generation
-ChromaDB	Local vector store for embeddings
-Streamlit	Frontend web interface
-Google CSE (Custom Search JSON API)	Real-time search data
-⚙️ Installation & Setup
+✅ Real-time web search using Google CSE  
+✅ Context-aware AI responses via Gemini  
+✅ ChromaDB-powered vector storage for knowledge retention  
+✅ LangChain pipelines for modular prompt flow  
+✅ Beautiful and interactive Streamlit web UI  
+✅ Secure `.env` configuration for API keys  
 
-Clone the Repository
+---
 
+## 🧱 Tech Stack
+
+| Component | Description |
+|------------|-------------|
+| **LangChain** | Orchestrates the chatbot pipeline and prompt logic |
+| **Gemini API** | LLM engine for natural, intelligent responses |
+| **ChromaDB** | Stores and retrieves embedded document data |
+| **Google Custom Search API** | Provides live, up-to-date search results |
+| **Streamlit** | Web app front-end for user interaction |
+| **Python 3.10+** | Core programming language |
+
+---
+
+## ⚙️ Setup & Installation
+
+### 1️⃣ Clone the Repository
+```bash
 git clone https://github.com/AyeshaIftikhar151/live_search_bot.git
 cd live_search_bot
-
-
-Activate Virtual Environment
-
-conda activate lanchain_env
-
-
-or if using venv:
-
+2️⃣ Create & Activate Virtual Environment
+bash
+Copy code
 python -m venv lanchain_env
 lanchain_env\Scripts\activate
-
-
-Install Dependencies
-
+3️⃣ Install Dependencies
+bash
+Copy code
 pip install -r requirements.txt
+4️⃣ Add Environment Variables
+Create a .env file in the project root:
 
-
-Create .env File
-Inside your project folder, add this file:
-
+ini
+Copy code
 GOOGLE_API_KEY=your_gemini_api_key
 GOOGLE_CSE_KEY=your_custom_search_api_key
-GOOGLE_CX=your_search_engine_id
+GOOGLE_CX=your_custom_search_engine_id
+▶️ Run the Application
+Launch the Streamlit web UI:
 
-💡 Run the Project
-
-To start the chatbot web app:
-
+bash
+Copy code
 streamlit run webui.py
+You’ll see the chatbot running locally in your browser at:
+👉 http://localhost:8501
 
-🧱 Folder Structure
+📁 Folder Structure
+bash
+Copy code
 live_search_bot/
 │
-├── ingest.py               # Script for data ingestion & vector embedding
+├── ingest.py               # Data ingestion & embedding script
 ├── search_bot.py           # Core chatbot logic (LangChain + Gemini)
 ├── webui.py                # Streamlit web interface
 ├── chroma_db/              # Vector database storage
-├── requirements.txt        # Python dependencies
+├── requirements.txt        # Project dependencies
 ├── README.md               # Project documentation
-└── .env                    # API keys (not uploaded to GitHub)
-
-🧭 Future Improvements
-
-🤖 Add multi-domain document retrieval
+└── .env                    # API keys (excluded from GitHub)
+🚀 Future Enhancements
+🌐 Add multi-domain document support
 
 🗣️ Integrate speech-to-text for voice queries
 
-📚 Expand RAG capabilities using web-based retrievers
+💬 Improve RAG pipeline with semantic reranking
 
-☁️ Deploy on Streamlit Cloud or HuggingFace Spaces
-
-📜 License
-
-This project is licensed under the MIT License.
+☁️ Deploy to Streamlit Cloud / Hugging Face Spaces
 
 👩‍💻 Author
-
 Ayesha Iftikhar
-🌐 GitHub Profile
+💼 GitHub Profile
+📧 ayesharajabsn@gmail.com
 
-🌟 Show your support
+📜 License
+This project is licensed under the MIT License – feel free to use and modify it.
 
-If you like this project, give it a ⭐ on GitHub!
+⭐ If you found this helpful, please star the repository and share it! ⭐
+🌟 Show your support ...!!!
+
