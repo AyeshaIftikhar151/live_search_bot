@@ -1,0 +1,10 @@
+streamlit
+langchain
+chromadb
+requests
+python-dotenv
+langchain-google-genai
+# depending on your embedding choice add the client package
+# google-cloud-aiplatform (if using Vertex AI SDK) or the package that provides the Gemini embeddings
+sentence-transformers
+rich
